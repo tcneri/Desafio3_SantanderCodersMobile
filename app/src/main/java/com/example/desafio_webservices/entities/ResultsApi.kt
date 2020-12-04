@@ -1,5 +1,7 @@
 package com.example.desafio_webservices.entities
 
+import java.io.Serializable
+
 data class Res(
         val data:Data)
 
@@ -12,9 +14,11 @@ data class Results(
         val title : String,
         val images : List<Images>,
         val description : String,
-        val prices : List<Prices>
+        val prices : List<Prices>,
+        val dates : ArrayList<Dates>,
+        val pageCount : Int
 
-        )
+        ):Serializable
 
 data class Images (
 
@@ -26,4 +30,10 @@ data class Prices (
 
         val type : String,
         val price : Double
+)
+
+data class Dates (
+
+        val type : String,
+        val date : String
 )

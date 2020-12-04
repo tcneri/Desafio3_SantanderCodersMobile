@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DESAFIO - Web Services</string>
+    <string name="app_name">MARVEL</string>
     <string name="tvName">Name</string>
     <string name="tvEmail">Email</string>
     <string name="tvPassword">Password</string>

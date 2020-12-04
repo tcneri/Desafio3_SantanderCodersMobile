@@ -28,8 +28,8 @@ class ComicAdapter(val listComics: List<Results>, val listener:OnComicClickListe
         val comic = listComics.get(position)
         var img = comic.images[0].path + "." + comic.images[0].extension
 
-        holder.tvTit.text = comic.title
-        Picasso.get().load(img).into(holder.ivComic)
+        holder.tvTit.text = "#"+comic.id.toString()
+        Picasso.get().load(img).resize(110,150).into(holder.ivComic)
 
     }
 
